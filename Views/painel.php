@@ -14,12 +14,33 @@ $row = mysqli_num_rows($result);
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Painel do Usuário</title>       
+    <title>Painel do Usuário</title>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="../favicon-32x32.png"/>      
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link href="../Assets/css/painel.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        
+        <style>
+            .bd-placeholder-img {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              user-select: none;
+            }
+
+            @media (max-width: 768px) {
+              .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+              }
+              #spanDelete{
+                  font-size: 0;
+              }
+            }
+          </style>
 </head>
 <body>
     <form class="form-cadastro row g-3" action="../Crud/update.php" method="POST">
@@ -84,7 +105,7 @@ $row = mysqli_num_rows($result);
         <div>
             <input style="display: none" value="<?php echo $dados['ID']?>" type="number" readonly  name="ID" >
         </div>
-        <button class="fas fa-trash btn btn-danger fa-3x" onclick="return confirm('Tem certeza que deseja deletar este registro?')" type="submit" style="padding: 15px">&nbsp;Excluir</button>
+        <button class="fas fa-trash btn btn-danger fa-3x" onclick="return confirm('Tem certeza que deseja deletar este registro?')" type="submit" style="padding: 15px"><span id="spanDelete">&nbsp;Excluir</span></button>
     </form>
 
 </body>
