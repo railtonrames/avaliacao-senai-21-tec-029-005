@@ -1,9 +1,9 @@
 <?php
 
-$hostname = "localhost";
-$bancodedados = "db_avaliacao_aprendizagem";
-$usuario = "root";
-$senha = "";
+$hostname = getenv('hostname');
+$bancodedados = getenv('bancodedados');
+$usuario = getenv('usuario');
+$senha = getenv('senha');
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
 if($mysqli->connect_errno){
