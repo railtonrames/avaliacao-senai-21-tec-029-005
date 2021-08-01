@@ -9,6 +9,7 @@ $query_select = "select * from usuario where email = '{$usuario}'";
 $result = mysqli_query($mysqli, $query_select);
 $dados = mysqli_fetch_assoc($result);
 $row = mysqli_num_rows($result);
+$_SESSION['id'] = $dados['ID'];
 ?>
 
 <!DOCTYPE html>
@@ -90,10 +91,6 @@ $row = mysqli_num_rows($result);
           <label for="inputData" class="form-label">*Data de Nascimento</label>
           <input value="<?php echo $dados['dt_nasc']?>" type="date" class="form-control" id="inputData" name="dt_nasc">
         </div> 
-        
-        <div>
-            <input style="display: none"  value="<?php echo $dados['ID']?>" type="number" readonly  name="ID" >
-        </div>
         
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Editar</button>

@@ -13,7 +13,7 @@ $senha = mysqli_real_escape_string($mysqli, $_POST['senha']);
 $nome = mysqli_real_escape_string($mysqli, $_POST['nome']);
 $telefone = mysqli_real_escape_string($mysqli, $_POST['telefone']);
 $dt_nasc = mysqli_real_escape_string($mysqli, $_POST['dt_nasc']);
-$ID = mysqli_real_escape_string($mysqli, $_POST['ID']);
+$ID = mysqli_real_escape_string($mysqli, $_SESSION['id']);
 
 $query = "UPDATE `usuario` SET `email` = '{$usuario}', `senha` = '{$senha}', `nome` = '{$nome}', `telefone` = '{$telefone}', `dt_nasc` = '{$dt_nasc}' WHERE `usuario`.`ID` = {$ID}";
 
