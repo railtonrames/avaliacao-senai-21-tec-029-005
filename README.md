@@ -6,9 +6,16 @@ Consiste em uma aplicação PHP que permite o cadastro de pessoas e realizar log
 
 # Telas
 
-![Login](?)
-![Cadastro](?)
-![Painel](?)
+## Desktop
+- Login e Cadastro:
+
+![Login-Cadastro-Desktop](https://github.com/railtonrames/avaliacao-senai-21-tec-029-005/blob/main/Assets/Telas/Desktop_App.png)
+- Painel
+
+![Painel-Desktop](https://github.com/railtonrames/avaliacao-senai-21-tec-029-005/blob/main/Assets/Telas/Painel_Desktop.png)
+
+## Mobile
+![Login-Cadastro-Painel-Mobile](https://github.com/railtonrames/avaliacao-senai-21-tec-029-005/blob/main/Assets/Telas/Mobile_App.png)
 
 # Tecnologias utilizadas
 ## Ambientes de desenvolvimento
@@ -23,7 +30,7 @@ Consiste em uma aplicação PHP que permite o cadastro de pessoas e realizar log
 - Banco de dados: JawsDB Maria
 
 ## Diagrama do Banco de Dados MariaDB
-![Diagrama BD](?)
+![Diagrama_BD](https://github.com/railtonrames/avaliacao-senai-21-tec-029-005/blob/main/Assets/Telas/diagrama_db.PNG)
 
 # Autor
 
