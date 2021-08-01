@@ -30,7 +30,7 @@ Consiste em uma aplicação PHP que permite o cadastro de pessoas e realizar log
 - Banco de dados: JawsDB Maria
 
 ## Diagrama do Banco de Dados MariaDB
-![Diagrama_BD](https://github.com/railtonrames/avaliacao-senai-21-tec-029-005/blob/main/Assets/Telas/diagrama_db.PNG)
+![Diagrama_BD](https://github.com/railtonrames/avaliacao-senai-21-tec-029-005/blob/main/Assets/Telas/Diagrama_Db.PNG)
 
 # Autor
 
